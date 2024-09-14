@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+body {
+  background-image: url("https://w0.peakpx.com/wallpaper/45/256/HD-wallpaper-space-espacio-flag-material-old-spice-star-tumblr.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text x="0" y="24" font-size="30">☄️</text></svg>')
+      16 16,
+    auto;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  /* Spooky text shadow */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  /* Pumpkin orange */
+  border: 3px solid white;
+  /* Purple border */
+  padding: 10px;
+  border-radius: 5px;
+  /* Spooky font */
+  position: relative;
+  overflow: hidden;
+}
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 0, 128, 0.5);
+  /* Semi-transparent purple */
+  border-radius: 5px;
+  z-index: -1;
+  /* Behind the text */
+  filter: blur(5px);
+  /* Blur effect for a glow */
+  opacity: 0.7;
+}
+
+.agbalumo-regular {
+  font-family: "Agbalumo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Heading1 {
+  letter-spacing: 3px;
+  font-family: "Agbalumo", system-ui;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.section {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: 3px solid white;
+  /* Pumpkin orange border */
+  transition: transform 0.3s, box-shadow 0.3s;
+  /* Smooth transition */
+  position: relative;
+}
+
+.section:before {
+  content: "";
+  position: absolute;
+  top: px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 10px;
+  z-index: -1;
+  /* Behind the section content */
+}
+
+.section:hover {
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
+  box-shadow: 0 0 15px white;
+  /* Glow effect on hover */
+}
+
+.section-header {
+  color: white;
+  /* Pumpkin orange */
+  font-size: 24px;
+  margin-bottom: 10px;
+  border: 3px solid yellow;
+  /* Purple border */
+  padding: 5px;
+  border-radius: 5px;
+  /* Spooky font */
+}
+
+.icon-link {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #000;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon-link:hover {
+  background-color: rgba(86, 2, 139, 0.561);
+  transform: rotate(10deg);
+  /* Rotate on hover */
+  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text x="0" y="24" font-size="24">💥</text></svg>')
+      16 16,
+    auto;
+}
+
+.icon {
+  width: auto;
+  height: 50px;
+}
+.Listen-music {
+  font-family: "Agbalumo", system-ui;
+  letter-spacing: 1.5px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.3s;
+  display: block;
+  margin: 5px 0;
+}
+
+.link:hover {
+  color: black;
+  /* Blood red */
+  transform: scale(1.1);
+  /* Enlarge on hover */
+  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text x="0" y="24" font-size="24">💥</text></svg>')
+      16 16,
+    auto;
+}
+
+.footer-text {
+  color: white;
+  animation: moveText 2s infinite alternate;
+  margin-top: 10px;
+  text-shadow: 4px 4px 10px rgb(0, 17, 255);
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  border: 3px soolid blue;
+  border-radius: 5px;
+  display: inline-block;
+  /* Spooky font */
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.Orange-text {
+  color: white;
+  animation: moveUpDown 2s infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6a0dad;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #333, #6a0dad);
+}
+
+/* Controls Container */
+.controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.control-btn {
+  background-color: white; /* Semi-transparent purple */
+  color: black;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 15px 20px; /* Increased padding for easier clicking */
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px; /* Larger text for better readability */
+}
+
+.control-btn:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Slider Styling */
+#volume-slider {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 8px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: black; /* Purple bar behind the slider */
+  outline: none;
+  transition: opacity 0.15s ease-in-out;
+}
+
+#volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: cyan; /* Slider color */
+  border: 3px solid midnightblue;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  border-radius: 90%;
+  transition: background 0.3s ease-in-out;
+}
+
+#volume-slider::-moz-range-thumb {
+  background: yellow; /* Slider color */
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
