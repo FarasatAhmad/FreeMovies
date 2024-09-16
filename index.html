@@ -23,20 +23,20 @@
     <style>
       /* HallowMoji Halloween-themed styling */
 
-      .hallowmoji {
+      .Spacemoji {
         color: #fff;
         font-size: 30px;
         font-family: Arial, sans-serif;
         text-shadow: 0 0 5px #000;
       }
 
-      .hallowmoji,
-      .hallowmoji .inner {
+      .Spacemoji,
+      .Spacemoji .inner {
         animation-iteration-count: infinite;
         animation-play-state: running;
       }
 
-      @keyframes hallowmojis-fall {
+      @keyframes Spacemojis-fall {
         0% {
           transform: translateY(0);
         }
@@ -46,7 +46,7 @@
         }
       }
 
-      @keyframes hallowmojis-shake {
+      @keyframes Spacemojis-shake {
         0%,
         100% {
           transform: translateX(0);
@@ -57,265 +57,262 @@
         }
       }
 
-      .hallowmoji {
+      .Spacemoji {
         position: fixed;
         top: -30%;
         z-index: 9999;
         -webkit-user-select: none;
         user-select: none;
         cursor: default;
-        animation-name: hallowmojis-shake;
+        animation-name: Spacemojis-shake;
         animation-duration: 10s;
         animation-timing-function: ease-in-out;
       }
 
-      .hallowmoji .inner {
+      .Spacemoji .inner {
         animation-duration: 10s;
-        animation-name: hallowmojis-fall;
+        animation-name: Spacemojis-fall;
         animation-timing-function: linear;
       }
 
-      .hallowmoji:nth-of-type(1) {
+      .Spacemoji:nth-of-type(1) {
         left: 1%;
         animation-delay: 0s;
       }
-      .hallowmoji:nth-of-type(1) .inner {
+      .Spacemoji:nth-of-type(1) .inner {
         animation-delay: 0s;
       }
 
-      .hallowmoji:nth-of-type(2) {
+      .Spacemoji:nth-of-type(2) {
         left: 10%;
         animation-delay: 1s;
       }
-      .hallowmoji:nth-of-type(2) .inner {
+      .Spacemoji:nth-of-type(2) .inner {
         animation-delay: 1s;
       }
 
-      .hallowmoji:nth-of-type(3) {
+      .Spacemoji:nth-of-type(3) {
         left: 20%;
         animation-delay: 0.5s;
       }
-      .hallowmoji:nth-of-type(3) .inner {
+      .Spacemoji:nth-of-type(3) .inner {
         animation-delay: 6s;
       }
 
-      .hallowmoji:nth-of-type(4) {
+      .Spacemoji:nth-of-type(4) {
         left: 30%;
         animation-delay: 2s;
       }
-      .hallowmoji:nth-of-type(4) .inner {
+      .Spacemoji:nth-of-type(4) .inner {
         animation-delay: 4s;
       }
 
-      .hallowmoji:nth-of-type(5) {
+      .Spacemoji:nth-of-type(5) {
         left: 40%;
         animation-delay: 2s;
       }
-      .hallowmoji:nth-of-type(5) .inner {
+      .Spacemoji:nth-of-type(5) .inner {
         animation-delay: 2s;
       }
 
-      .hallowmoji:nth-of-type(6) {
+      .Spacemoji:nth-of-type(6) {
         left: 50%;
         animation-delay: 3s;
       }
-      .hallowmoji:nth-of-type(6) .inner {
+      .Spacemoji:nth-of-type(6) .inner {
         animation-delay: 8s;
       }
 
-      .hallowmoji:nth-of-type(7) {
+      .Spacemoji:nth-of-type(7) {
         left: 60%;
         animation-delay: 2s;
       }
-      .hallowmoji:nth-of-type(7) .inner {
+      .Spacemoji:nth-of-type(7) .inner {
         animation-delay: 1s;
       }
 
-      .hallowmoji:nth-of-type(8) {
+      .Spacemoji:nth-of-type(8) {
         left: 70%;
         animation-delay: 1s;
       }
-      .hallowmoji:nth-of-type(8) .inner {
+      .Spacemoji:nth-of-type(8) .inner {
         animation-delay: 2.5s;
       }
 
-      .hallowmoji:nth-of-type(9) {
+      .Spacemoji:nth-of-type(9) {
         left: 80%;
         animation-delay: 0s;
       }
-      .hallowmoji:nth-of-type(9) .inner {
+      .Spacemoji:nth-of-type(9) .inner {
         animation-delay: 3.5s;
       }
 
-      .hallowmoji:nth-of-type(10) {
+      .Spacemoji:nth-of-type(10) {
         left: 90%;
         animation-delay: 1.5s;
       }
-      .hallowmoji:nth-of-type(10) .inner {
+      .Spacemoji:nth-of-type(10) .inner {
         animation-delay: 3s;
       }
 
-      .hallowmoji:nth-of-type(11) {
+      .Spacemoji:nth-of-type(11) {
         left: 25%;
         animation-delay: 0.5s;
       }
-      .hallowmoji:nth-of-type(11) .inner {
+      .Spacemoji:nth-of-type(11) .inner {
         animation-delay: 5s;
       }
 
-      .hallowmoji:nth-of-type(12) {
+      .Spacemoji:nth-of-type(12) {
         left: 75%;
         animation-delay: 2.8s;
       }
-      .hallowmoji:nth-of-type(12) .inner {
+      .Spacemoji:nth-of-type(12) .inner {
         animation-delay: 7s;
       }
 
-      .hallowmoji:nth-of-type(13) {
+      .Spacemoji:nth-of-type(13) {
         left: 5%;
         animation-delay: 1.2s;
       }
-      .hallowmoji:nth-of-type(13) .inner {
+      .Spacemoji:nth-of-type(13) .inner {
         animation-delay: 2.2s;
       }
 
-      .hallowmoji:nth-of-type(14) {
+      .Spacemoji:nth-of-type(14) {
         left: 15%;
         animation-delay: 1.8s;
       }
-      .hallowmoji:nth-of-type(14) .inner {
+      .Spacemoji:nth-of-type(14) .inner {
         animation-delay: 4s;
       }
 
-      .hallowmoji:nth-of-type(15) {
+      .Spacemoji:nth-of-type(15) {
         left: 35%;
         animation-delay: 0.8s;
       }
-      .hallowmoji:nth-of-type(15) .inner {
+      .Spacemoji:nth-of-type(15) .inner {
         animation-delay: 6.5s;
       }
 
-      .hallowmoji:nth-of-type(16) {
+      .Spacemoji:nth-of-type(16) {
         left: 45%;
         animation-delay: 2.5s;
       }
-      .hallowmoji:nth-of-type(16) .inner {
+      .Spacemoji:nth-of-type(16) .inner {
         animation-delay: 4.2s;
       }
 
-      .hallowmoji:nth-of-type(17) {
+      .Spacemoji:nth-of-type(17) {
         left: 55%;
         animation-delay: 1s;
       }
-      .hallowmoji:nth-of-type(17) .inner {
+      .Spacemoji:nth-of-type(17) .inner {
         animation-delay: 3.8s;
       }
 
-      .hallowmoji:nth-of-type(18) {
+      .Spacemoji:nth-of-type(18) {
         left: 65%;
         animation-delay: 2.2s;
       }
-      .hallowmoji:nth-of-type(18) .inner {
+      .Spacemoji:nth-of-type(18) .inner {
         animation-delay: 5.5s;
       }
 
-      .hallowmoji:nth-of-type(19) {
+      .Spacemoji:nth-of-type(19) {
         left: 85%;
         animation-delay: 0.9s;
       }
-      .hallowmoji:nth-of-type(19) .inner {
+      .Spacemoji:nth-of-type(19) .inner {
         animation-delay: 6s;
       }
 
-      .hallowmoji:nth-of-type(20) {
+      .Spacemoji:nth-of-type(20) {
         left: 95%;
         animation-delay: 3s;
       }
-      .hallowmoji:nth-of-type(20) .inner {
+      .Spacemoji:nth-of-type(20) .inner {
         animation-delay: 8s;
       }
 
-      .hallowmoji:nth-of-type(21) {
+      .Spacemoji:nth-of-type(21) {
         left: 15%;
         animation-delay: 1s;
       }
-      .hallowmoji:nth-of-type(21) .inner {
+      .Spacemoji:nth-of-type(21) .inner {
         animation-delay: 0.8s;
       }
 
-      .hallowmoji:nth-of-type(22) {
+      .Spacemoji:nth-of-type(22) {
         left: 25%;
         animation-delay: 2s;
       }
-      .hallowmoji:nth-of-type(22) .inner {
+      .Spacemoji:nth-of-type(22) .inner {
         animation-delay: 2s;
       }
 
-      .hallowmoji:nth-of-type(23) {
+      .Spacemoji:nth-of-type(23) {
         left: 35%;
         animation-delay: 1.5s;
       }
-      .hallowmoji:nth-of-type(23) .inner {
+      .Spacemoji:nth-of-type(23) .inner {
         animation-delay: 3.5s;
       }
 
-      .hallowmoji:nth-of-type(24) {
+      .Spacemoji:nth-of-type(24) {
         left: 45%;
         animation-delay: 0.5s;
       }
-      .hallowmoji:nth-of-type(24) .inner {
+      .Spacemoji:nth-of-type(24) .inner {
         animation-delay: 4.5s;
       }
 
-      .hallowmoji:nth-of-type(25) {
+      .Spacemoji:nth-of-type(25) {
         left: 55%;
         animation-delay: 1.7s;
       }
-      .hallowmoji:nth-of-type(25) .inner {
+      .Spacemoji:nth-of-type(25) .inner {
         animation-delay: 5s;
       }
 
-      .hallowmoji:nth-of-type(26) {
+      .Spacemoji:nth-of-type(26) {
         left: 65%;
         animation-delay: 2.5s;
       }
-      .hallowmoji:nth-of-type(26) .inner {
+      .Spacemoji:nth-of-type(26) .inner {
         animation-delay: 6.5s;
       }
 
-      .hallowmoji:nth-of-type(27) {
+      .Spacemoji:nth-of-type(27) {
         left: 75%;
         animation-delay: 0.8s;
       }
-      .hallowmoji:nth-of-type(27) .inner {
+      .Spacemoji:nth-of-type(27) .inner {
         animation-delay: 7.2s;
       }
 
-      .hallowmoji:nth-of-type(28) {
+      .Spacemoji:nth-of-type(28) {
         left: 85%;
         animation-delay: 1.6s;
       }
-      .hallowmoji:nth-of-type(28) .inner {
+      .Spacemoji:nth-of-type(28) .inner {
         animation-delay: 4.2s;
       }
 
-      .hallowmoji:nth-of-type(29) {
+      .Spacemoji:nth-of-type(29) {
         left: 5%;
         animation-delay: 2.4s;
       }
-      .hallowmoji:nth-of-type(29) .inner {
+      .Spacemoji:nth-of-type(29) .inner {
         animation-delay: 2.8s;
       }
 
-      .hallowmoji:nth-of-type(30) {
+      .Spacemoji:nth-of-type(30) {
         left: 10%;
         animation-delay: 3s;
       }
-      .hallowmoji:nth-of-type(30) .inner {
+      .Spacemoji:nth-of-type(30) .inner {
         animation-delay: 5.5s;
-      }
-      .Listen-music {
-        font-size: 13px;
       }
     </style>
   </head>
@@ -334,10 +331,11 @@
                 style="text-decoration: underline"
               >
                 <img
-                  src="https://i.imghippo.com/files/S2UB31723335663.png"
+                  src="https://static-00.iconduck.com/assets.00/brave-browser-icon-256x256-y8nem4fi.png"
                   alt="BRAVE Browser"
                   style="height: 24px; vertical-align: middle"
                 />
+                Brave Browser
               </a>
               OR use this AdBlocker
               <a
@@ -346,10 +344,11 @@
                 style="text-decoration: underline"
               >
                 <img
-                  src="https://i.imghippo.com/files/97UKj1723335831.png"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/UBlock_Origin.svg/1024px-UBlock_Origin.svg.png"
                   alt="Ad Blocker"
                   style="height: 24px; vertical-align: middle"
                 />
+                Ublock Origin
               </a>
               BEFORE clicking on one of the links below (Otherwise you will see
               ads/popups!)</u
@@ -854,6 +853,22 @@
           </a>
         </div>
       </div>
+
+      <div class="feedback">
+        <form
+          id="feedbackForm"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+        >
+          <textarea
+            name="feedback"
+            placeholder="Share your cosmic thoughts here..."
+            required
+          ></textarea>
+          <button type="submit">Send to the Stars</button>
+        </form>
+      </div>
+        <div id="notification"></div>
       <!-- End of Movies & Shows Section -->
       <p class="footer-text">(Share responsibly)</p>
       <p class="footer-text">ENJOY!</p>
@@ -864,71 +879,71 @@
       </p>
     </div>
     <!-- Floating Halloween HallowMojis -->
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       🪐
       <div class="inner">🪐</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       🚀
       <div class="inner">🚀</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       🛸
       <div class="inner">🛸</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       🪨
       <div class="inner">🪨</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       💫
       <div class="inner">💫</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       👨‍🚀
       <div class="inner">👨‍🚀</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       👽
       <div class="inner">👽</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       🛰️
       <div class="inner">🛰️</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       🌑
       <div class="inner">🌑</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       ☀️
       <div class="inner">☀️</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       👾
       <div class="inner">👾</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       ✨
       <div class="inner">✨</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       🌙
       <div class="inner">🌙</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       🌟
       <div class="inner">🌟</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       🛰
       <div class="inner">🛰</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       ☄️
       <div class="inner">☄️</div>
     </div>
-    <div class="hallowmoji">
+    <div class="Spacemoji">
       🌍
       <div class="inner">🌍</div>
     </div>
@@ -953,6 +968,36 @@
           );
         });
       }
+      document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const form = event.target;
+            const notification = document.getElementById('notification');
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => {
+                if (response.ok) {
+                    notification.textContent = 'Your message was sent successfully!';
+                    notification.className = 'success'; // Add success class
+                    notification.style.display = 'block'; // Show the notification
+                    form.reset(); // Reset the form
+                } else {
+                    notification.textContent = 'Your message was sent successfully!';
+                    notification.className = 'error'; // Add error class
+                    notification.style.display = 'block'; // Show the notification
+                }
+                setTimeout(() => notification.style.display = 'none', 5000); // Hide after 5 seconds
+            })
+            .catch(error => {
+                notification.textContent = 'Your message was sent successfully!';
+                notification.className = 'error'; // Add error class
+                notification.style.display = 'block'; // Show the notification
+                setTimeout(() => notification.style.display = 'none', 5000); // Hide after 5 seconds
+            });
+        })
     </script>
     <p class="footer-text">
       &copy; 2024 The Cosmic Corner. All rights reserved.

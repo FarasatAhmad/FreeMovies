@@ -11,8 +11,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text x="0" y="24" font-size="30">☄️</text></svg>')
-      16 16,
+  cursor: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22%3E%3Cpath fill=%22%23FFF%22 stroke=%22%23000%22 stroke-width=%222%22 d=%22M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z%22/%3E%3C/svg%3E")
+      12 12,
     auto;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -30,6 +30,11 @@ p {
   margin: 5px 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   /* Spooky text shadow */
+}
+a {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22%3E%3Cpath fill=%22%23FFF%22 stroke=%22%23000%22 stroke-width=%222%22 stroke-linejoin=%22round%22 d=%22M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z%22/%3E%3C/svg%3E")
+      12 12,
+    auto;
 }
 
 h1,
@@ -82,6 +87,16 @@ h6::before {
   font-family: "Agbalumo", system-ui;
   text-decoration: underline;
 }
+.Heading1::hover {
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
+  box-shadow: 0 0 15px rgb(255, 162, 0);
+  /* Glow effect on hover */
+  border: 3px solid yellow;
+  /* Pumpkin orange border */
+  transition: transform 0.5s, box-shadow 0.3s;
+  /* Smooth transition */
+}
 
 .container {
   max-width: 900px;
@@ -96,8 +111,8 @@ h6::before {
   margin: 20px 0;
   margin-top: 100px;
   border: 3px solid yellow;
-  /* Pumpkin orange border */
-  transition: transform 0.3s, box-shadow 0.3s;
+  /* Yellow border */
+  transition: transform 0.5s, box-shadow 0.3s;
   /* Smooth transition */
   position: relative;
 }
@@ -128,6 +143,8 @@ h6::before {
   margin-bottom: 10px;
   border: 3px solid rgb(0, 0, 110);
   /* Purple border */
+  transition: transform 1s, box-shadow 0.3s;
+  /* Smooth transition */
   padding: 5px;
   border-radius: 5px;
   /* Spooky font */
@@ -150,14 +167,15 @@ h6::before {
 }
 
 .icon-link:hover {
-  background-color: rgb(54, 129, 13);
+  background-color: rgba(255, 255, 255, 0.427);
   transform: scale(1.05);
   /* Slightly enlarge on hover */
-  box-shadow: 0 0 15px rgb(75, 83, 32);
+  box-shadow: 0 0 20px rgb(255, 255, 255);
   /* Glow effect on hover */
-  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text x="0" y="24" font-size="24">💥</text></svg>')
-      16 16,
-    auto;
+  border: 3px solid rgb(255, 255, 255);
+  /* Purple border */
+  transition: transform 1s, box-shadow 1s;
+  /* Smooth transition */
 }
 
 .icon {
@@ -183,9 +201,6 @@ h6::before {
   /* Blood red */
   transform: scale(1.1);
   /* Enlarge on hover */
-  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text x="0" y="24" font-size="24">💥</text></svg>')
-      16 16,
-    auto;
 }
 
 .footer-text {
@@ -248,4 +263,77 @@ h6::before {
 
 body::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, #333, #6a0dad);
+}
+.feedback {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#feedbackForm {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+textarea {
+  width: 90%;
+  height: 150px;
+  border: 2px solid #00bfff;
+  border-radius: 5px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 16px;
+  resize: none;
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  border-color: #1e90ff;
+  outline: none;
+}
+
+button {
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 5s ease;
+}
+button:hover {
+  background: linear-gradient(45deg, #3333ff, #ff00cc);
+}
+#confirmationMessage {
+  display: none;
+  color: #00ff00;
+  margin-top: 10px;
+}
+#notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(179, 2, 255, 0.8);
+  color: #ffffff;
+  font-family: "Agbalumo", system-ui;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  display: none; /* Hidden by default */
+  z-index: 1000;
+}
+
+.success {
+  background: #00ff00;
+}
+
+.error {
+  background: #ff0000;
 }
