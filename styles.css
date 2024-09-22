@@ -66,7 +66,6 @@ h6::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5);
   /* Semi-transparent purple */
   border-radius: 5px;
   z-index: -1;
@@ -83,19 +82,20 @@ h6::before {
 }
 
 .Heading1 {
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   font-family: "Agbalumo", system-ui;
   text-decoration: underline;
-}
-.Heading1::hover {
-  transform: scale(1.05);
-  /* Slightly enlarge on hover */
-  box-shadow: 0 0 15px rgb(255, 162, 0);
-  /* Glow effect on hover */
-  border: 3px solid yellow;
-  /* Pumpkin orange border */
   transition: transform 0.5s, box-shadow 0.3s;
   /* Smooth transition */
+  color: white;
+}
+.Heading1:hover {
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
+  box-shadow: 0 0 30px rgb(255, 255, 255);
+  /* Glow effect on hover */
+  border: 3px solid rgb(255, 255, 255);
+  /* Pumpkin orange border */
 }
 
 .container {
@@ -273,7 +273,7 @@ body::-webkit-scrollbar-thumb {
 #feedbackForm {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   text-align: center;
   max-width: 500px;
@@ -336,4 +336,316 @@ button:hover {
 
 .error {
   background: #ff0000;
+}
+.logo {
+  border-radius: 10px;
+}
+
+/* HallowMoji Halloween-themed styling */
+
+.Spacemoji {
+  color: #fff;
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+
+.Spacemoji,
+.Spacemoji .inner {
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes Spacemojis-fall {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(110vh);
+  }
+}
+
+@keyframes Spacemojis-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(80px);
+  }
+}
+
+.Spacemoji {
+  position: fixed;
+  top: -30%;
+  z-index: 9999;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  animation-name: Spacemojis-shake;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+}
+
+.Spacemoji .inner {
+  animation-duration: 10s;
+  animation-name: Spacemojis-fall;
+  animation-timing-function: linear;
+}
+
+.Spacemoji:nth-of-type(1) {
+  left: 1%;
+  animation-delay: 0s;
+}
+.Spacemoji:nth-of-type(1) .inner {
+  animation-delay: 0s;
+}
+
+.Spacemoji:nth-of-type(2) {
+  left: 10%;
+  animation-delay: 1s;
+}
+.Spacemoji:nth-of-type(2) .inner {
+  animation-delay: 1s;
+}
+
+.Spacemoji:nth-of-type(3) {
+  left: 20%;
+  animation-delay: 0.5s;
+}
+.Spacemoji:nth-of-type(3) .inner {
+  animation-delay: 6s;
+}
+
+.Spacemoji:nth-of-type(4) {
+  left: 30%;
+  animation-delay: 2s;
+}
+.Spacemoji:nth-of-type(4) .inner {
+  animation-delay: 4s;
+}
+
+.Spacemoji:nth-of-type(5) {
+  left: 40%;
+  animation-delay: 2s;
+}
+.Spacemoji:nth-of-type(5) .inner {
+  animation-delay: 2s;
+}
+
+.Spacemoji:nth-of-type(6) {
+  left: 50%;
+  animation-delay: 3s;
+}
+.Spacemoji:nth-of-type(6) .inner {
+  animation-delay: 8s;
+}
+
+.Spacemoji:nth-of-type(7) {
+  left: 60%;
+  animation-delay: 2s;
+}
+.Spacemoji:nth-of-type(7) .inner {
+  animation-delay: 1s;
+}
+
+.Spacemoji:nth-of-type(8) {
+  left: 70%;
+  animation-delay: 1s;
+}
+.Spacemoji:nth-of-type(8) .inner {
+  animation-delay: 2.5s;
+}
+
+.Spacemoji:nth-of-type(9) {
+  left: 80%;
+  animation-delay: 0s;
+}
+.Spacemoji:nth-of-type(9) .inner {
+  animation-delay: 3.5s;
+}
+
+.Spacemoji:nth-of-type(10) {
+  left: 90%;
+  animation-delay: 1.5s;
+}
+.Spacemoji:nth-of-type(10) .inner {
+  animation-delay: 3s;
+}
+
+.Spacemoji:nth-of-type(11) {
+  left: 25%;
+  animation-delay: 0.5s;
+}
+.Spacemoji:nth-of-type(11) .inner {
+  animation-delay: 5s;
+}
+
+.Spacemoji:nth-of-type(12) {
+  left: 75%;
+  animation-delay: 2.8s;
+}
+.Spacemoji:nth-of-type(12) .inner {
+  animation-delay: 7s;
+}
+
+.Spacemoji:nth-of-type(13) {
+  left: 5%;
+  animation-delay: 1.2s;
+}
+.Spacemoji:nth-of-type(13) .inner {
+  animation-delay: 2.2s;
+}
+
+.Spacemoji:nth-of-type(14) {
+  left: 15%;
+  animation-delay: 1.8s;
+}
+.Spacemoji:nth-of-type(14) .inner {
+  animation-delay: 4s;
+}
+
+.Spacemoji:nth-of-type(15) {
+  left: 35%;
+  animation-delay: 0.8s;
+}
+.Spacemoji:nth-of-type(15) .inner {
+  animation-delay: 6.5s;
+}
+
+.Spacemoji:nth-of-type(16) {
+  left: 45%;
+  animation-delay: 2.5s;
+}
+.Spacemoji:nth-of-type(16) .inner {
+  animation-delay: 4.2s;
+}
+
+.Spacemoji:nth-of-type(17) {
+  left: 55%;
+  animation-delay: 1s;
+}
+.Spacemoji:nth-of-type(17) .inner {
+  animation-delay: 3.8s;
+}
+
+.Spacemoji:nth-of-type(18) {
+  left: 65%;
+  animation-delay: 2.2s;
+}
+.Spacemoji:nth-of-type(18) .inner {
+  animation-delay: 5.5s;
+}
+
+.Spacemoji:nth-of-type(19) {
+  left: 85%;
+  animation-delay: 0.9s;
+}
+.Spacemoji:nth-of-type(19) .inner {
+  animation-delay: 6s;
+}
+
+.Spacemoji:nth-of-type(20) {
+  left: 95%;
+  animation-delay: 3s;
+}
+.Spacemoji:nth-of-type(20) .inner {
+  animation-delay: 8s;
+}
+
+.Spacemoji:nth-of-type(21) {
+  left: 15%;
+  animation-delay: 1s;
+}
+.Spacemoji:nth-of-type(21) .inner {
+  animation-delay: 0.8s;
+}
+
+.Spacemoji:nth-of-type(22) {
+  left: 25%;
+  animation-delay: 2s;
+}
+.Spacemoji:nth-of-type(22) .inner {
+  animation-delay: 2s;
+}
+
+.Spacemoji:nth-of-type(23) {
+  left: 35%;
+  animation-delay: 1.5s;
+}
+.Spacemoji:nth-of-type(23) .inner {
+  animation-delay: 3.5s;
+}
+
+.Spacemoji:nth-of-type(24) {
+  left: 45%;
+  animation-delay: 0.5s;
+}
+.Spacemoji:nth-of-type(24) .inner {
+  animation-delay: 4.5s;
+}
+
+.Spacemoji:nth-of-type(25) {
+  left: 55%;
+  animation-delay: 1.7s;
+}
+.Spacemoji:nth-of-type(25) .inner {
+  animation-delay: 5s;
+}
+
+.Spacemoji:nth-of-type(26) {
+  left: 65%;
+  animation-delay: 2.5s;
+}
+.Spacemoji:nth-of-type(26) .inner {
+  animation-delay: 6.5s;
+}
+
+.Spacemoji:nth-of-type(27) {
+  left: 75%;
+  animation-delay: 0.8s;
+}
+.Spacemoji:nth-of-type(27) .inner {
+  animation-delay: 7.2s;
+}
+
+.Spacemoji:nth-of-type(28) {
+  left: 85%;
+  animation-delay: 1.6s;
+}
+.Spacemoji:nth-of-type(28) .inner {
+  animation-delay: 4.2s;
+}
+
+.Spacemoji:nth-of-type(29) {
+  left: 5%;
+  animation-delay: 2.4s;
+}
+.Spacemoji:nth-of-type(29) .inner {
+  animation-delay: 2.8s;
+}
+
+.Spacemoji:nth-of-type(30) {
+  left: 10%;
+  animation-delay: 3s;
+}
+.Spacemoji:nth-of-type(30) .inner {
+  animation-delay: 5.5s;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
 }
